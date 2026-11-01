@@ -16,7 +16,7 @@
   </defs>
   <rect width="1280" height="360" fill="url(#bg)"/>
   <!-- the grid, on the right, under the text line -->
-  <g stroke="url(#fadeR)" stroke-width="3" stroke-linecap="round">
+  <g stroke="#5FB0A6" stroke-width="3" stroke-linecap="round" opacity="0.7">
     <line x1="960" y1="250" x2="960" y2="300"/><line x1="1000" y1="262" x2="1000" y2="300"/><line x1="1040" y1="270" x2="1040" y2="300"/><line x1="1080" y1="276" x2="1080" y2="300"/>
     <line x1="1160" y1="256" x2="1160" y2="300"/><line x1="1200" y1="266" x2="1200" y2="300"/><line x1="1240" y1="274" x2="1240" y2="300"/>
   </g>
