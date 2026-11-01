@@ -43,7 +43,19 @@ O Compasso separa as duas coisas: **o modelo gera os sons, o código decide o te
 | Loops sem emenda | [`make-loop.py`](make-loop.py) |
 | Sons reais (um rastreador, um vapor) | amostras posicionadas pelo `cue.py` |
 
-## Começando
+## Instalação rápida
+
+```bash
+curl -LsSf https://raw.githubusercontent.com/sidnei-almeida/compasso/main/install.sh | bash
+```
+
+O script clona o Stable Audio 3 em `~/ai/stable-audio-3`, cria a venv com torch para CPU, **baixa os
+modelos sozinho** (Small-SFX, Small-Music e o codificador de texto, uns 3,5 GB, de espelhos sem
+login), instala o gerador e roda um teste de 5 s. Idempotente: rodar de novo só confere o que falta.
+Precisa de `git`, `curl`, `ffmpeg` e Python 3.10+ (`uv` é instalado se faltar). Variáveis:
+`SA3_DIR` e `COMPASSO_DIR` mudam as pastas.
+
+## Passo a passo (se preferir à mão)
 
 ### 1. Stable Audio 3, local e sem login
 
@@ -58,7 +70,7 @@ uv pip install sentencepiece protobuf
 Os pesos oficiais são *gated* no Hugging Face. O espelho `AEmotionStudio/stable-audio-3-mirrors`
 tem `small-sfx/` e `small-music/` sem gate; o codificador de texto vem de `LeeAeron/t5gemma-b-b-ul2`
 (copie `model.safetensors` e `tokenizer.model` para `weights/<modelo>/t5gemma-b-b-ul2/`).
-Use o [`sa3_gen.py`](exemplos/sa3_gen.py) deste repo dentro da pasta do Stable Audio: ele carrega
+Use o [`sa3_gen.py`](sa3_gen.py) deste repo dentro da pasta do Stable Audio: ele carrega
 tudo de arquivo e nunca toca no Hub. **CPU basta**: 20 s de áudio em 8 s.
 
 ### 2. Gerar camadas
