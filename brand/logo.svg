@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 160" width="760" height="160">
+  <!-- Compasso logo: mark + wordmark on the ink background. -->
+  <defs>
+    <linearGradient id="hit" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#E89B3C"/>
+      <stop offset="1" stop-color="#FFD28A"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="160" rx="32" fill="#0B0C10"/>
+  <g transform="translate(0 0) scale(0.625)">
+    <rect width="256" height="256" rx="56" fill="#15171C"/>
+    <g stroke="#5FB0A6" stroke-width="6" stroke-linecap="round" opacity="0.85">
+      <line x1="112" y1="112" x2="112" y2="176"/>
+      <line x1="156" y1="124" x2="156" y2="176"/>
+      <line x1="200" y1="136" x2="200" y2="176"/>
+    </g>
+    <rect x="52" y="56" width="16" height="124" rx="8" fill="url(#hit)"/>
+    <line x1="44" y1="200" x2="212" y2="200" stroke="#ECE7DF" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+  </g>
+  <text x="196" y="104" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="88" font-weight="600" letter-spacing="-2" fill="#ECE7DF">compasso</text>
+  <circle cx="614" cy="100" r="7" fill="#E89B3C"/>
+</svg>

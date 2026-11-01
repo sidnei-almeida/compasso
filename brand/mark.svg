@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Compasso mark: a bar of four beats; the downbeat is the hit. -->
+  <defs>
+    <linearGradient id="hit" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#E89B3C"/>
+      <stop offset="1" stop-color="#FFD28A"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#0B0C10"/>
+  <!-- the grid: beats 2, 3, 4 -->
+  <g stroke="#5FB0A6" stroke-width="6" stroke-linecap="round" opacity="0.85">
+    <line x1="112" y1="112" x2="112" y2="176"/>
+    <line x1="156" y1="124" x2="156" y2="176"/>
+    <line x1="200" y1="136" x2="200" y2="176"/>
+  </g>
+  <!-- the downbeat -->
+  <rect x="52" y="56" width="16" height="124" rx="8" fill="url(#hit)"/>
+  <!-- the floor -->
+  <line x1="44" y1="200" x2="212" y2="200" stroke="#ECE7DF" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+</svg>

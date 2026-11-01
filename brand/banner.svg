@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360">
+  <!-- README banner. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0C10"/>
+      <stop offset="1" stop-color="#15171C"/>
+    </linearGradient>
+    <linearGradient id="hit" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#E89B3C"/>
+      <stop offset="1" stop-color="#FFD28A"/>
+    </linearGradient>
+    <linearGradient id="fadeR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5FB0A6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#5FB0A6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="360" fill="url(#bg)"/>
+  <!-- the grid, on the right, under the text line -->
+  <g stroke="url(#fadeR)" stroke-width="3" stroke-linecap="round">
+    <line x1="960" y1="250" x2="960" y2="300"/><line x1="1000" y1="262" x2="1000" y2="300"/><line x1="1040" y1="270" x2="1040" y2="300"/><line x1="1080" y1="276" x2="1080" y2="300"/>
+    <line x1="1160" y1="256" x2="1160" y2="300"/><line x1="1200" y1="266" x2="1200" y2="300"/><line x1="1240" y1="274" x2="1240" y2="300"/>
+  </g>
+  <g fill="url(#hit)">
+    <rect x="914" y="190" width="10" height="110" rx="5" opacity="0.9"/>
+    <rect x="1114" y="206" width="10" height="94" rx="5" opacity="0.7"/>
+  </g>
+  <line x1="900" y1="318" x2="1250" y2="318" stroke="#ECE7DF" stroke-width="3" stroke-linecap="round" opacity="0.25"/>
+  <!-- mark -->
+  <g transform="translate(96 84) scale(0.75)">
+    <rect width="256" height="256" rx="56" fill="#15171C" stroke="#23262E" stroke-width="2"/>
+    <g stroke="#5FB0A6" stroke-width="6" stroke-linecap="round" opacity="0.85">
+      <line x1="112" y1="112" x2="112" y2="176"/><line x1="156" y1="124" x2="156" y2="176"/><line x1="200" y1="136" x2="200" y2="176"/>
+    </g>
+    <rect x="52" y="56" width="16" height="124" rx="8" fill="url(#hit)"/>
+    <line x1="44" y1="200" x2="212" y2="200" stroke="#ECE7DF" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+  </g>
+  <!-- wordmark and tagline -->
+  <text x="330" y="176" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="84" font-weight="600" letter-spacing="-2" fill="#ECE7DF">compasso</text>
+  <text x="332" y="226" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="400" letter-spacing="1" fill="#9AA3AF">trilha de cinema por código, no compasso</text>
+</svg>
